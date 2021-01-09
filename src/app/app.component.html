@@ -1,11 +1,14 @@
-<h1>Movies</h1><br>
+<app-movie-list></app-movie-list>
 <table>
-  <tr>
-    <th>
-      Movie List
-    </th>
-  </tr>
   <tr *ngFor='let m of movies'>
     <td>{{m}}</td>
   </tr>
-</table>
+</table><br>
+
+<app-actor-list></app-actor-list>
+<table>
+  <tr *ngFor='let a of actors'>
+    <td>{{a}}</td>
+  </tr>
+</table><br>
+

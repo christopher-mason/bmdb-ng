@@ -7,6 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bmdb-ng';
-  movies = ["Blazing Saddles", "Austin Powers", "The Fifth Element", "Bad Boys", "Contact"];
-
 }
