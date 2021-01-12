@@ -14,4 +14,10 @@ export class ActorService {
   getAll(): Observable<Actor[]> {
     return this.http.get(URL+'/') as Observable<Actor[]>;
   }
+
+// create actor
+create(actor: Actor): Observable<Actor> {
+  return this.http.post(URL+'/', actor) as Observable<Actor>;
+}
+
 }
