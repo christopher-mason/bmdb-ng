@@ -13,6 +13,8 @@ import { NoComponentDefinedComponent } from './core/no-component-defined/no-comp
 import { MenuComponent } from './core/menu/menu.component';
 import { CreditListComponent } from './feature/credit/credit-list/credit-list.component';
 import { CreditCreateComponent } from './feature/credit/credit-create/credit-create.component';
+import { MovieDetailComponent } from './feature/movie/movie-detail/movie-detail.component';
+import { MovieEditComponent } from './feature/movie/movie-edit/movie-edit.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { CreditCreateComponent } from './feature/credit/credit-create/credit-cre
     NoComponentDefinedComponent,
     MenuComponent,
     CreditListComponent,
-    CreditCreateComponent
+    CreditCreateComponent,
+    MovieDetailComponent,
+    MovieEditComponent
   ],
   imports: [
     BrowserModule,

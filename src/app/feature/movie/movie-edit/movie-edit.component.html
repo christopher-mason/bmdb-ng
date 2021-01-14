@@ -1,0 +1,43 @@
+<app-menu></app-menu>
+<section class="heading">
+    <span class='component-title'>[{{title}}]</span>
+  </section>
+  <main *ngIf='movie' class="single">
+    <table class="table table-sm">
+      <tr>
+        <td>
+            Title:
+        </td>
+        <td>
+            <input [(ngModel)]="movie.title" class="rounded" type="text">
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Year:
+        </td>
+        <td>
+            <input [(ngModel)]="movie.year" class="rounded" type="text">
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Rating:
+        </td>
+        <td>
+            <input [(ngModel)]="movie.rating" class="rounded" type="text">
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Director:
+        </td>
+        <td>
+            <input [(ngModel)]="movie.director" class="rounded" type="text">
+        </td>
+      </tr>
+    </table>
+  </main>
+  <span><button (click)="save()" class="btn btn-sm btn-primary">{{submitBtnTitle}}</button></span> |
+  <!-- <span><button (click)="backClicked()" class="btn btn-sm btn-primary">Back</button></span> -->
+<br>
