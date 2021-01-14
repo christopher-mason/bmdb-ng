@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { NoComponentDefinedComponent } from './core/no-component-defined/no-component-defined.component';
 import { ActorCreateComponent } from './feature/actor/actor-create/actor-create.component';
 import { ActorListComponent } from './feature/actor/actor-list/actor-list.component';
+import { CreditListComponent } from './feature/credit/credit-list/credit-list.component';
 import { MovieCreateComponent } from './feature/movie/movie-create/movie-create.component';
 import { MovieDetailComponent } from './feature/movie/movie-detail/movie-detail.component';
 import { MovieEditComponent } from './feature/movie/movie-edit/movie-edit.component';
@@ -17,6 +18,7 @@ const routes: Routes = [
  { path: 'movie-edit/:id', component: MovieEditComponent },
  { path: 'actor-list', component: ActorListComponent },
  { path: 'actor-create', component: ActorCreateComponent },
+ { path: 'credit-list', component: CreditListComponent },
  { path: '**', component: NoComponentDefinedComponent }
 ];
 

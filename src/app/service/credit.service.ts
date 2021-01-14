@@ -16,8 +16,6 @@ export class CreditService {
   }
 
 // create credit
-create(credit: Credit): Observable<Credit> {
-  return this.http.post(URL+'/', credit) as Observable<Credit>;
-}
+
 
 }
