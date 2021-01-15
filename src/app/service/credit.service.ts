@@ -15,7 +15,7 @@ export class CreditService {
     return this.http.get(URL+'/') as Observable<Credit[]>;
   }
 
-// create credit
+// create
 
 
 }
