@@ -18,19 +18,4 @@ export class CreditCreateComponent implements OnInit {
   ngOnInit() {
   }
 
-  save() {
-    // save the credit to the DB
-    this.creditSvc.create(this.credit).subscribe(
-      resp => {
-        this.credit = resp as Credit;
-        console.log('Credit created',this.credit)
-        // forward to the credit list component
-        this.router.navigateByUrl("/credit-list")
-      },
-      err => {
-        console.log(err);
-      }
-    );
-  }
-
 }
