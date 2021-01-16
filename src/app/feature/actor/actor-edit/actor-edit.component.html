@@ -1,1 +1,43 @@
-<p>actor-edit works!</p>
+<app-menu></app-menu>
+<section class="heading">
+    <span class='component-title'>[{{title}}]</span>
+  </section>
+  <main *ngIf='actor' class="single">
+    <table class="table table-sm">
+      <tr>
+        <td>
+            First Name:
+        </td>
+        <td>
+            <input [(ngModel)]="actor.firstName" class="rounded" type="text">
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Last Name:
+        </td>
+        <td>
+            <input [(ngModel)]="actor.lastName" class="rounded" type="text">
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Gender:
+        </td>
+        <td>
+            <input [(ngModel)]="actor.gender" class="rounded" type="text">
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Birth Date:
+        </td>
+        <td>
+            <input [(ngModel)]="actor.birthDate" class="rounded" type="text">
+        </td>
+      </tr>
+    </table>
+  </main>
+  <span><button (click)="save()" class="btn btn-sm btn-primary">{{submitBtnTitle}}</button></span> |
+  <!-- <span><button (click)="backClicked()" class="btn btn-sm btn-primary">Back</button></span> -->
+<br>
