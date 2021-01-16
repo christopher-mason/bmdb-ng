@@ -1,1 +1,39 @@
-
+<app-menu></app-menu>
+<section class="heading">
+    <span class='component-title'>[{{title}}]</span>
+  </section>
+  <main class="single">
+    <table class="table table-sm">
+      <tr>
+        <td>
+            Actor:
+        </td>
+        <td>
+            <select [(ngModel)]="credit.actor" class="rounded">
+                <option *ngFor='let actor of actors' [ngValue]='actor'>{{actor.lastName + ", " + actor.firstName}}</option>
+            </select>   
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Movie:
+        </td>
+        <td>
+            <select [(ngModel)]="credit.movie" class="rounded">
+                <option *ngFor='let movie of movies' [ngValue]='movie'>{{movie.title + " [" + movie.year + "]"}}</option>
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Role:
+        </td>
+        <td>
+            <input [(ngModel)]="credit.role" class="rounded" type="text">
+        </td>
+      </tr>
+    </table>
+  </main>
+  <span><button (click)="save()" class="btn btn-sm btn-primary">{{submitBtnTitle}}</button></span> |
+  <!-- <span><button (click)="backClicked()" class="btn btn-sm btn-primary">Back</button></span> -->
+<br>
