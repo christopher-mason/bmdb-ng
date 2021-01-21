@@ -21,6 +21,9 @@ import { CreditDetailComponent } from './feature/credit/credit-detail/credit-det
 import { CreditEditComponent } from './feature/credit/credit-edit/credit-edit.component';
 import { UserListComponent } from './feature/user/user-list/user-list.component';
 import { UserLoginComponent } from './feature/user/user-login/user-login.component';
+import { UserCreateComponent } from './feature/user/user-create/user-create.component';
+import { UserEditComponent } from './feature/user/user-edit/user-edit.component';
+import { UserDetailComponent } from './feature/user/user-detail/user-detail.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,10 @@ import { UserLoginComponent } from './feature/user/user-login/user-login.compone
     CreditDetailComponent,
     CreditEditComponent,
     UserListComponent,
-    UserLoginComponent
+    UserLoginComponent,
+    UserCreateComponent,
+    UserEditComponent,
+    UserDetailComponent
   ],
   imports: [
     BrowserModule,

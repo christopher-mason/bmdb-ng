@@ -5,7 +5,7 @@ import { MovieService } from 'src/app/service/movie.service';
 
 @Component({
   selector: 'app-movie-create',
-  templateUrl: './movie-create.component.html',
+  templateUrl: '../movie-maint-shared/movie-maint.component.html',
   styleUrls: ['./movie-create.component.css']
 })
 export class MovieCreateComponent implements OnInit {
