@@ -13,6 +13,7 @@ import { MovieCreateComponent } from './feature/movie/movie-create/movie-create.
 import { MovieDetailComponent } from './feature/movie/movie-detail/movie-detail.component';
 import { MovieEditComponent } from './feature/movie/movie-edit/movie-edit.component';
 import { MovieListComponent } from './feature/movie/movie-list/movie-list.component';
+import { UserListComponent } from './feature/user/user-list/user-list.component';
 import { UserLoginComponent } from './feature/user/user-login/user-login.component';
 
 
@@ -30,6 +31,7 @@ const routes: Routes = [
  { path: 'credit-create', component: CreditCreateComponent },
  { path: 'credit-detail/:id', component: CreditDetailComponent },
  { path: 'credit-edit/:id', component: CreditEditComponent },
+ { path: 'user-list', component: UserListComponent },
  { path: 'user-login', component: UserLoginComponent },
  { path: '**', component: NoComponentDefinedComponent }
 ];
