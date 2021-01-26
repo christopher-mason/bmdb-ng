@@ -8,11 +8,15 @@
 <table class="table table-sm table-striped">
     <thead>
         <tr>
-            <th>ID</th><th>Title</th><th>Year</th><th>Action</th>
+            <th><button [ngClass]='colClasses' (click)="sortBy('id')">ID</button></th>
+            <th><button [ngClass]='colClasses' (click)="sortBy('title')">Title</button></th>
+            <th><button [ngClass]='colClasses' (click)="sortBy('year')">Year</button></th>
+            <th>Action</th>
+            <!--<th>ID</th><th>Title</th><th>Year</th><th>Action</th> -->
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor='let movie of movies'>
+        <tr *ngFor='let movie of movies | sort:sortCriteria:sortOrder'>
             <td>{{movie.id}}</td>
             <td>{{movie.title}}</td>
             <td>{{movie.year}}</td>
